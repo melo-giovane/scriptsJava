@@ -22,6 +22,13 @@ public class FuncoesStrings {
         System.out.println("replace('a', 'x'): " + s06);
         System.out.println("replace(ABC, xy): " + s07);
 
+        //Split
+        String[] vect = s.split(" ");
+
+        System.out.println("Imprimindo palavra por palavra...");
+        for(int i=0; i<vect.length; i++){
+            System.out.println(vect[i]);
+        }
     }
 
 
