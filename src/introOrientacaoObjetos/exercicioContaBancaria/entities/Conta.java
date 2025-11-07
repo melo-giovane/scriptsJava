@@ -5,10 +5,10 @@ public class Conta {
     private double balance;
     private int accNumber;
 
-    public Conta(String name, double balance, int accNumber){
+    public Conta(String name, double initialDeposit, int accNumber){
         this.name = name;
-        this.balance = balance;
         this.accNumber = accNumber;
+        balance += initialDeposit;
     }
 
     public Conta(String name, int accNumber){

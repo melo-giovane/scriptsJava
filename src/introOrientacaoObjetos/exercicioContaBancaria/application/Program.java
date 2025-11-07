@@ -7,6 +7,8 @@ import java.util.Scanner;
 public class Program {
     public static void main(String[] args){
 
+        Conta conta;
+
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter account number: ");
         int accNumber = sc.nextInt();
@@ -20,9 +22,13 @@ public class Program {
         if(initialDeposit == 'y'){
             System.out.print("Enter initial deposit value: ");
             initialDepositValue = sc.nextDouble();
+            conta = new Conta(name, initialDepositValue, accNumber);
+        }
+        else {
+            conta = new Conta(name, accNumber);
+
         }
 
-        Conta conta = new Conta(name, initialDepositValue, accNumber);
         System.out.println("Account Data:");
         System.out.println(conta);
 
