@@ -16,14 +16,14 @@ public class arraysExample {
         double sum = 0;
 
         for (int i = 0; i < n; i++) {
-            System.out.println("Digite a próxima altura:");
+            System.out.println("Enter next height");
             arr[i] = sc.nextDouble();
             sum+=arr[i];
         }
 
         double average = sum/n;
 
-        System.out.println("AVERAGE HEIGHT: " + average);
+        System.out.printf("AVERAGE HEIGHT: %.2f%n", average);
 
 
     }
